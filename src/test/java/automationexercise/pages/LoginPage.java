@@ -1,6 +1,6 @@
 package automationexercise.pages;
 
-import automationexercise.utilities.Driver;
+import automationexercise.tests.exceltests.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -41,6 +41,9 @@ public class LoginPage {
 
     @FindBy(xpath = "//*[.='Your email or password is incorrect!']")
     public WebElement yourEmailOrPasswordIsIncorrectText;
+
+    @FindBy(xpath = "//*[.='Email Address already exist!']")
+    public WebElement emailAddressAlreadyExistText;
 
 
 

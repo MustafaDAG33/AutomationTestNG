@@ -1,4 +1,4 @@
-package automationexercise.utilities;
+package automationexercise.tests.exceltests.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

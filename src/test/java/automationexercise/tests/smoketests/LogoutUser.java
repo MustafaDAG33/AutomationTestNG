@@ -1,8 +1,8 @@
 package automationexercise.tests.smoketests;
 
 import automationexercise.pages.*;
-import automationexercise.utilities.ConfigReader;
-import automationexercise.utilities.Driver;
+import automationexercise.tests.exceltests.utilities.ConfigReader;
+import automationexercise.tests.exceltests.utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

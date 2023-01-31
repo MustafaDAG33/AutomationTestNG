@@ -1,4 +1,4 @@
-package automationexercise.utilities;
+package automationexercise.tests.exceltests.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
