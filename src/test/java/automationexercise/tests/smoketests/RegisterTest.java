@@ -1,8 +1,8 @@
 package automationexercise.tests.smoketests;
 
 import automationexercise.pages.*;
-import automationexercise.tests.exceltests.utilities.ConfigReader;
-import automationexercise.tests.exceltests.utilities.Driver;
+import automationexercise.utilities.ConfigReader;
+import automationexercise.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;

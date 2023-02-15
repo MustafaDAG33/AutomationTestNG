@@ -1,6 +1,6 @@
 package automationexercise.pages;
 
-import automationexercise.tests.exceltests.utilities.Driver;
+import automationexercise.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,5 +26,17 @@ public class HomePage {
 
     @FindBy(xpath = "//i[@class='fa fa-lock']")
     public WebElement logoutButton;
+
+    @FindBy(partialLinkText = "Contact us")
+    public WebElement contactUsButton;
+
+    @FindBy(partialLinkText = "Test Cases")
+    public WebElement testCasesButton;
+
+    @FindBy(partialLinkText = "Products")
+    public WebElement productsButton;
+
+    @FindBy(partialLinkText = "Cart")
+    public WebElement cartButton;
 
 }

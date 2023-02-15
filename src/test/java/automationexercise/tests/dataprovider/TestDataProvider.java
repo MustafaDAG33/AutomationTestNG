@@ -2,8 +2,8 @@ package automationexercise.tests.dataprovider;
 
 import automationexercise.pages.HomePage;
 import automationexercise.pages.LoginPage;
-import automationexercise.tests.exceltests.utilities.ConfigReader;
-import automationexercise.tests.exceltests.utilities.Driver;
+import automationexercise.utilities.ConfigReader;
+import automationexercise.utilities.Driver;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -24,20 +24,12 @@ public class TestDataProvider {
         Sheet sheet =   workbook.getSheet("Sayfa1");
 
         String[][] str = {
-                {
-                        sheet.getRow(1).getCell(0).toString(),
-                        sheet.getRow(1).getCell(1).toString()
-                },
-                {        sheet.getRow(2).getCell(0).toString(),
-        sheet.getRow(2).getCell(1).toString()},
-                {        sheet.getRow(3).getCell(0).toString(),
-        sheet.getRow(3).getCell(1).toString()}
+                {sheet.getRow(1).getCell(0).toString(), sheet.getRow(1).getCell(1).toString()},
+                {sheet.getRow(2).getCell(0).toString(), sheet.getRow(2).getCell(1).toString()},
+                {sheet.getRow(3).getCell(0).toString(), sheet.getRow(3).getCell(1).toString()}
 
         };
         return str;
-
-
-
     }
 
     @Test(dataProvider = "test01")
@@ -50,7 +42,6 @@ public class TestDataProvider {
         loginPage.newUserName.sendKeys(name);
         loginPage.newUserEmail.sendKeys(password);
         loginPage.newUserButton.click();
-
 
     }
 }
